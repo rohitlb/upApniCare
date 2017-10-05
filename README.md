@@ -18,6 +18,7 @@
 3 OTP
 4 profile app+web
 5 basic securities
+6 password hashing
 
 
 
