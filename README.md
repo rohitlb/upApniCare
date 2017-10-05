@@ -13,12 +13,23 @@
 
 ### Bugs / Feature Requests
 
+## backend
+
+
 1 login / reg
 2 mongodb-session
 3 OTP
 4 profile app+web
 5 basic securities
 6 password hashing
+
+## front end
+
+1 login / reg
+2 OTP
+3 profile web
+4 basic securities
+
 
 
 
