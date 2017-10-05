@@ -36,6 +36,4 @@
 
 
 
-
-
  * [Star us on GitHub](https://github.com/rohitlb/upApniCare)
