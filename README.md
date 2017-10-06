@@ -22,6 +22,7 @@
 4 profile app+web
 5 basic securities
 6 password hashing
+7 session ID .. random gen and hashed.
 
 ## front end
 
@@ -33,7 +34,7 @@
 
 
 
-    
+
 
 
  * [Star us on GitHub](https://github.com/rohitlb/upApniCare)
