@@ -217,7 +217,6 @@ app.get('/logout', function (req, res) {
     res.render('logout');
 });
 
-
 //logout the user
 app.get('/startlogout', function (req, res) {
         req.session.destroy(function (err) {
@@ -237,7 +236,6 @@ app.get('/profile', function (req, res) {
 app.get('/medicine',function (req,res) {
     res.render('medicine');
 });
-
 
 //
 // app.post('/medicine',function (req,res) {
@@ -276,7 +274,6 @@ app.get('/medicine',function (req,res) {
 //     });
 //
 // });
-
 
 app.post('/medicine',function (req,res) {
     var dosage_form = req.body.dosage_form;
@@ -526,7 +523,6 @@ app.post('/medicine',function (req,res) {
         );
 });
 
-
 app.get('/findcompany',function (req,res) {
     Company.find().exec(function (err,result) {
         if(err){
@@ -614,7 +610,6 @@ app.get('/gotobrand',function (req,res) {
     });
 });
 
-
 // app.get('/gotobrand',function (req,res) {
 //     var brand = req.query.brand;
 //     console.log(brand);
@@ -627,7 +622,6 @@ app.get('/gotobrand',function (req,res) {
 //         }
 //     });
 // });
-
 
 app.get('/findbrand',function (req,res) {
     Brand.find().exec(function (err,result) {
@@ -646,13 +640,10 @@ app.get('/findbrand',function (req,res) {
     });
 });
 
-
-
 app.get('/asdas',function (req, res) {
 
 
 });
-
 
 //data base connection and opening port
     var db = 'mongodb://localhost/Duplicate';
@@ -666,9 +657,6 @@ app.get('/asdas',function (req, res) {
             console.log('server connected to http:localhost:' + app.get('port'));
         });
     });
-
-
-
 
 app.get('/findcompany',function (req,res) {
     Company.find({}).exec(function (err, result) {
@@ -702,7 +690,6 @@ app.get('/findcompany',function (req,res) {
     });
 });
 
-
 // app.get('/findbrand',function (req,res) {
 //     Brand.find({}).exec(function (err, result) {
 //         if (err) {
@@ -730,7 +717,6 @@ app.get('/findcompany',function (req,res) {
 //         }
 //     });
 // });
-
 
 //
 // app.post('/medicine',function (req,res) {
