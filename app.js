@@ -562,6 +562,7 @@ app.get('/gotobrand',function (req,res) {
                 data['result'][i] = {brand : result[i].brand_id};
             }
 
+            // using for loop
 
             // var datas = {};
             // datas['results'] = [];
@@ -581,12 +582,15 @@ app.get('/gotobrand',function (req,res) {
             // }
             //console.log(datas);
 
+            // using recursion
+
             var datas = {};
             datas['results'] = [];
             var j = 0;
             function brand(j) {
 
                 if (j >= data.result[0].brand.length) {
+                    // here datas is correct
                     console.log(datas);
                     return datas;
                 }
@@ -603,6 +607,7 @@ app.get('/gotobrand',function (req,res) {
                 });
                 //console.log(datas);
             }
+            // here value is gadbad
             var value = brand(j);
             console.log(value);
         }
