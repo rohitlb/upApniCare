@@ -1,0 +1,29 @@
+doctype html
+html
+    head
+    body
+        h1 Enter medicine details
+        form(action='/medicine', method='POST')
+            | Company :
+            input(type='text', name='company_name')
+            br
+            | Brand :
+            input(type='text', name='brand_name')
+            br
+            | Dosage_form :
+            input(type='text', name='dosage_form')
+            br
+            | Strength :
+            input(type='text', name='strength')
+            br
+            | Ingredients :
+            input(type='text', name='active_ingredients')
+            br
+            | Packaging :
+            input(type='text', name='packaging')
+            br
+            | Price :
+            input(type='text', name='price')
+            br
+            br
+            input(type='submit', name='submit')

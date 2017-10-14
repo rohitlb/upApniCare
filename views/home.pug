@@ -1,123 +1,13 @@
 doctype html
 
 html
-    head
 
-        //materializecss css file
-        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css")
+    include ./head
 
-        //google font icons
-        link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
-        //font awesome icons
-        link(href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet")
+    body
 
-        //jquery file
-        script(type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js")
+        div
 
-        //materializecss js file
-        script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js")
+            include partial/header
 
-        //viewport scaling
-        meta(name="viewport" content="width=device-width, initial-scale=1.0")
-
-
-        //our own css file
-        link(rel="stylesheet" href="public/css/styles.css")
-
-        title AkaviTech
-
-    main
-        body#mainbg.mainbg
-
-        div.row.right-align
-            a.btn.red.contactButton.modal-trigger(href="#contactInfoPage") Contact
-
-        div#contactInfoPage.modal
-            div.row.resetrow(style="display: flex;")
-                div.col.m8.s12
-                    br
-                    div.row
-                        div.col.s4
-                            i.material-icons.large business
-                        div.col.s8
-                            h5 Registered Address:
-                            span D-2, Murli Nagar, Hussaingunj, Cantt. Road, Lucknow, Uttar Pradesh 226001
-                    div.row
-                        div.col.s4
-                            i.material-icons.large business_center
-                        div.col.s8
-                            h5 Communication Address:
-                            span f23 kapoor house, Modinagar, Ghaziabad, Uttar Pradesh 201204
-                    div.row
-                        div.col.s4
-                            i.material-icons.large call
-                        div.col.s8
-                            h5 Phone Numbers
-                            span +91-8948747131 (Akarsh Sachdeva)
-                            br
-                            span +91-7903735386 (Avinash Kumar)
-                    div.row
-                        div.col.s4
-                            i.material-icons.large email
-                        div.col.s8
-                            h5 E-mails
-                            span akarshsachdeva@akavitech.com
-                            br
-                            span avinashkumar@akavitech.com
-
-                div.col.m4.s12.indigo.darken-4.valign-wrapper
-                    div
-                        p.white-text We are available 24X7 for any questions. Please feel free to contact if you have any queries
-
-
-        div.mainContent.center
-            div.row.resetrow
-                h3.col.s8.push-s2.white-text Stay tuned.
-            div.row.resetrow
-                h3.col.s10.push-s1.white-text We're launching soon.
-
-            div.row.resetrow(style="padding-top: 30px;")
-                h5.col.s8.push-s2.white-text Share your contact and we'll notify you
-            div.row
-                div.col.s8.push-s2.m4.push-m4
-                    input#notifyEmail(type="email" placeholder="Email Address" style="border-radius: 35px; background-color: white;").emailBox
-            div.row.center-align
-                a.btn-floating.btn-large.red.submitButton
-                    i.material-icons send
-
-            div.row
-                div.circlebg
-                    span.launchtimer#launchDay
-                    br
-                    | Days
-                div.circlebg
-                    span.launchtimer#launchHour
-                    br
-                    | Hours
-                div.circlebg
-                    span.launchtimer#launchMinute
-                    br
-                    | Minutes
-                div.circlebg
-                    span.launchtimer#launchSecond
-                    br
-                    | Seconds
-
-            //jquery-ripples effect
-            script(src="/public/js/jquery.ripples-min.js")
-            script(src="/public/js/script.js")
-            script(src="/public/js/timer.js")
-
-    footer.page-footer.transparent
-        div.row
-            div.col.s6.l3
-                div.row
-                    div.col.s3.m2
-                        i.tooltipped.fa.fa-facebook.fa-2x(data-position="top" data-delay="50" data-tooltip="Facebook")
-                    div.col.s3.m2
-                        i.tooltipped.fa.fa-twitter.fa-2x(data-position="top" data-delay="50" data-tooltip="Twitter")
-                    div.col.s3.m2
-                        i.tooltipped.fa.fa-youtube.fa-2x(data-position="top" data-delay="50" data-tooltip="YouTube")
-                    div.col.s3.m2
-                        i.tooltipped.fa.fa-linkedin.fa-2x(data-position="top" data-delay="50" data-tooltip="LinkedIn")
-
+            include ./body
