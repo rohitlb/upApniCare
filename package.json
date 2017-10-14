@@ -1,0 +1,32 @@
+{
+  "name": "apni-care",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "async": "^2.5.0",
+    "bcryptjs": "^2.4.3",
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.18.2",
+    "connect-mongodb-session": "^1.3.0",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.1",
+    "express-session": "^1.15.6",
+    "mongoose": "^4.11.14",
+    "pug": "^2.0.0-rc.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohitlb/ApniCare.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rohitlb/ApniCare/issues"
+  },
+  "homepage": "https://github.com/rohitlb/ApniCare#readme"
+}
