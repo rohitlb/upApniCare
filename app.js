@@ -587,25 +587,28 @@ app.get('/gotobrand',function (req,res) {
 
                 if (j >= data.result[0].brand.length) {
                     // here datas is correct
+                    
                     console.log(datas);
                     return datas;
                 }
 
                 Brand.findById(data.result[0].brand[j], function (err1, result1) {
-
+// used here
                     datas['results'][j] = {
                         brand: result1.brand_name,
                         dosage: result1.dosage_id
                     };
 
-                   return brand(j + 1);
+                    return brand(j + 1);
                     //console.log(datas);
                 });
                 //console.log(datas);
             }
             // here value is gadbad
+            // base case
             var value = brand(j);
             console.log(value);
+// value taken from
         }
     });
 });
